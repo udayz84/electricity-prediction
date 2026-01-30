@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+
+# Model files (too large for git)
+*.pkl
+model/trained_models/*.pkl
+model/*.pkl
+
+# Dataset files (can be large)
+*.csv
+model/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+frontend/build/
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+
+# Cache
+.cache/
+*.cache
+frontend/node_modules/.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Images (if large)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+
+# Temporary files
+*.tmp
+*.temp

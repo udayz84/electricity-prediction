@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Consumption Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: Arial; background:#f4f6f8; padding:20px; }
+        .card { background:white; padding:20px; border-radius:10px; margin-bottom:20px; }
+        .grid { display:flex; gap:20px; }
+        select, input, button { padding:8px; margin:5px; }
+        .alert { font-size:18px; font-weight:bold; }
+    </style>
+</head>
+
+<body>
+
+<h1>⚡ Electricity Consumption Prediction</h1>
+
+<div class="card">
+    <select id="appliance">
+    <option>AC</option>
+    <option>Fridge</option>
+    <option>Lights</option>
+    <option>Fan</option>
+    <option>Washing Machine </option>
+    <option>TV</option>
+</select>
+<select id="season">
+        <option value="winter">winter</option>
+        <option value="summer">summer</option>
+        <option value="autumn">autumn</option>
+        <option value="rainy">rainy</option>
+    </select>
+    Hour <input type="number" id="hour" min="0" max="23">
+    Day <input type="number" id="day" min="1" max="31">
+    Month <input type="number" id="month" min="1" max="12">
+    Year <input type="number" id="year" value="2024">
+
+    <button onclick="predict()">Predict</button>
+</div>
+
+<div class="grid">
+    <div class="card"><canvas id="dailyChart"></canvas></div>
+    <div class="card"><canvas id="monthlyChart"></canvas></div>
+    <div class="card"><canvas id="applianceChart"></canvas></div>
+</div>
+
+<div class="card alert" id="alertBox"></div>
+
+<script>
+let dailyChartObj, monthlyChartObj, applianceChartObj;
+
+async function predict(){
+    const form = new FormData();
+    form.append("appliance", appliance.value);
+    form.append("hour", hour.value);
+    form.append("day", day.value);
+    form.append("month", month.value);
+    form.append("year", year.value);
+    form.append("season", season.value);
+
+    const res = await fetch("/predict", { method:"POST", body:form });
+    const data = await res.json();
+
+    console.log(data); // DEBUG
+
+    if(dailyChartObj) dailyChartObj.destroy();
+    if(monthlyChartObj) monthlyChartObj.destroy();
+    if(applianceChartObj) applianceChartObj.destroy();
+
+    dailyChartObj = new Chart(document.getElementById("dailyChart"), {
+        type:"bar",
+        data:{
+            labels:data.daily.hours,
+            datasets:[{
+                label:"Daily Consumption (Hour-wise)",
+                data:data.daily.values
+            }]
+        }
+    });
+
+    monthlyChartObj = new Chart(document.getElementById("monthlyChart"), {
+        type:"line",
+        data:{
+            labels:data.monthly.days,
+            datasets:[{
+                label:"Monthly Consumption (Day-wise)",
+                data:data.monthly.values
+            }]
+        }
+    });
+
+    applianceChartObj = new Chart(document.getElementById("applianceChart"), {
+        type:"pie",
+        data:{
+            labels:data.appliance.labels,
+            datasets:[{
+                data:data.appliance.values
+            }]
+        }
+    });
+
+    alertBox.innerText = data.alert;
+}
+</script>
+
+
+</body>
+</html>

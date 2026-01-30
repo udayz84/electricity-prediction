@@ -1,0 +1,282 @@
+{
+  "AC": {
+    "r2": 0.8518667612557176,
+    "r2_percent": 85.18667612557176,
+    "mae": 0.11580043649668603,
+    "rmse": 0.14062809034378024,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Fridge": {
+    "r2": -0.018231860181133985,
+    "r2_percent": -1.8231860181133985,
+    "mae": 0.07483019118802431,
+    "rmse": 0.08691750722327667,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Lights": {
+    "r2": 0.7182873211687282,
+    "r2_percent": 71.82873211687281,
+    "mae": 0.07665823468674465,
+    "rmse": 0.08941031696887888,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Fan": {
+    "r2": 0.7845512240296441,
+    "r2_percent": 78.4551224029644,
+    "mae": 0.08062226694599395,
+    "rmse": 0.09625013040163806,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Washing Machine": {
+    "r2": 0.7830136792234912,
+    "r2_percent": 78.30136792234912,
+    "mae": 0.08142288136440047,
+    "rmse": 0.09682617730436059,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "TV": {
+    "r2": -0.02019093843702069,
+    "r2_percent": -2.019093843702069,
+    "mae": 0.10108582546155512,
+    "rmse": 0.11691282322543191,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Microwave": {
+    "r2": 0.754626014481298,
+    "r2_percent": 75.46260144812979,
+    "mae": 0.10310414625239624,
+    "rmse": 0.1254461387006555,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Oven": {
+    "r2": 0.8267560025717686,
+    "r2_percent": 82.67560025717687,
+    "mae": 0.09867263768348633,
+    "rmse": 0.12308772297516993,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Dishwasher": {
+    "r2": 0.7544323990369672,
+    "r2_percent": 75.44323990369672,
+    "mae": 0.1295865873491172,
+    "rmse": 0.15760074901878307,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Water Heater": {
+    "r2": -0.016036761033012326,
+    "r2_percent": -1.6036761033012326,
+    "mae": 0.049176687940795036,
+    "rmse": 0.05899371973556593,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Dryer": {
+    "r2": 0.7551782928903219,
+    "r2_percent": 75.51782928903219,
+    "mae": 0.15499821125171848,
+    "rmse": 0.18892827501178094,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Computer": {
+    "r2": -0.02081504038710924,
+    "r2_percent": -2.081504038710924,
+    "mae": 0.07365230699497874,
+    "rmse": 0.08692646595969586,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Motor": {
+    "r2": 0.7339332694301731,
+    "r2_percent": 73.39332694301731,
+    "mae": 0.15419869057989588,
+    "rmse": 0.1911848489328632,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Sound System": {
+    "r2": -0.02302857144117132,
+    "r2_percent": -2.302857144117132,
+    "mae": 0.04216269970518878,
+    "rmse": 0.04985545486369556,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Electric Stove": {
+    "r2": 0.8248827971926032,
+    "r2_percent": 82.48827971926032,
+    "mae": 0.08688674377546318,
+    "rmse": 0.10851271158478017,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Refrigerator": {
+    "r2": -0.017103606383979786,
+    "r2_percent": -1.7103606383979786,
+    "mae": 0.09015706226327584,
+    "rmse": 0.10826478821147387,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Freezer": {
+    "r2": -0.01960452287889547,
+    "r2_percent": -1.960452287889547,
+    "mae": 0.06570781428416855,
+    "rmse": 0.07873606016362118,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Air Purifier": {
+    "r2": 0.7403201828796248,
+    "r2_percent": 74.03201828796247,
+    "mae": 0.053018188523511554,
+    "rmse": 0.06515178573350243,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Humidifier": {
+    "r2": 0.7397236555416458,
+    "r2_percent": 73.97236555416458,
+    "mae": 0.04413993261361019,
+    "rmse": 0.05426736608377418,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  },
+  "Dehumidifier": {
+    "r2": 0.7418495384161373,
+    "r2_percent": 74.18495384161373,
+    "mae": 0.06167333295801758,
+    "rmse": 0.07593137506294413,
+    "model_type": "RandomForest",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": null
+    }
+  }
+}

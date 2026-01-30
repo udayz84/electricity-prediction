@@ -1,0 +1,21 @@
+.chart-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.chart-container {
+  width: 100%;
+  position: relative;
+  min-height: 300px;
+  overflow: visible;
+}
+
+.no-data {
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+  border-radius: 6px;
+  font-size: 13px;
+}

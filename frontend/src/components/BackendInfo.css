@@ -1,0 +1,99 @@
+.backend-info {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.backend-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 14px;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.high-accuracy {
+  color: #10b981;
+}
+
+.low-accuracy {
+  color: #ef4444;
+}
+
+.accuracy-table {
+  margin-top: 16px;
+}
+
+.accuracy-table h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.accuracy-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.accuracy-table th,
+.accuracy-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accuracy-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  font-size: 12px;
+}
+
+.accuracy-table td {
+  color: #1f2937;
+}
+
+.accuracy-table tr:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .accuracy-table {
+    overflow-x: auto;
+  }
+}

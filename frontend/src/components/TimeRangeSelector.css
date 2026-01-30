@@ -1,0 +1,78 @@
+.time-range-container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.range-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.title-icon {
+  font-size: 18px;
+}
+
+.range-subtitle {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.range-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.range-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.range-button:hover {
+  border-color: #6366f1;
+  background: #f0f4ff;
+}
+
+.range-button.active {
+  border-color: #6366f1;
+  background: #f0f4ff;
+}
+
+.button-icon {
+  font-size: 24px;
+}
+
+.button-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.button-desc {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .range-buttons {
+    grid-template-columns: 1fr;
+  }
+}
